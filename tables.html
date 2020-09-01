@@ -15,23 +15,6 @@ outline:2px dashed blue;
 <body>
 <table >
 
-  <tr class="top-header"><!docstype html>
-<html>
-<head>
-<style> 
-table, th, td
- {
-border:1px solid black;
-outline:2px dashed blue;
-}
- tr:nth-child(even) {background-color: #f2f2f2;}
- [class|=top]{background:yellow;}
-
-</style>
-</head>
-<body>
-<table >
-
   <tr class="top-header">
     <th >Subject</th>
     <th align ="left">Data mining</th>
@@ -58,28 +41,19 @@ var x = 85 ;
 var y = 95;
 var z = 94;
 var a=90;
-var t = x + y +z + a;
-var avg=t/4;
+
+function add(a, b ,c,d) {
+  return a + b + c + d ;
+}
+var t = add(x,y,z,a);
+function avg(a)
+{
+return t/4;
+}
+var avg= avg(t)
+
 document.getElementById("demo1").innerHTML = t;
 document.getElementById("demo2").innerHTML = avg;
 </script>
 </body>
-</html>
-
-    <th >Subject</th>
-    <th align ="left">Data mining</th>
-    <th align="left">Web Technologies</th>
-    <th align="left">AI</th>
-    <th align="left">Compiler Design</th>
-  </tr>
-  <tr>
-    <th>marks</th>
-    <td align="right">85</td>
-    <td align = "right">95</td>
-<td align ="right">90</td>
-    
-    <td align = "right">94</td>
-  </tr>
-
-</table></body>
 </html>
